@@ -30,6 +30,7 @@ const InstructorLogin = () => {
         .then(response=>{
            if (response.data.bool = true){
             localStorage.setItem('InstructorLoginStatus',true);
+            localStorage.setItem('InstructorID',response.data.teacher_id);
             window.location.href="instructor-dashboard"
            }
         });

@@ -37,36 +37,6 @@ const Header = () => {
                   <a href="#" className="item channel_item">
                     Finance & Accounting
                   </a>
-                  <a href="#" className="item channel_item">
-                    IT & Software
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Office Productivity
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Personal Development
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Design
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Marketing
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Lifestyle
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Photography
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Health & Fitness
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Music
-                  </a>
-                  <a href="#" className="item channel_item">
-                    Teaching & Academics
-                  </a>
                 </div>
               </div>
             </div>
@@ -83,6 +53,7 @@ const Header = () => {
               </div>
             </div>
           </div>
+ 
           <div className="header_right">
             <ul>
 
@@ -139,6 +110,7 @@ const Header = () => {
                   </a>
                 </div>
               </li>
+
               <li className="ui dropdown">
                 <a href="#" className="option_links" title="Notifications">
                   <i className="uil uil-bell"></i>
@@ -188,87 +160,30 @@ const Header = () => {
                   </a>
                 </div>
               </li>
-              <li className="ui dropdown">
-                <a href="#" className="opts_account" title="Account">
-                  <img src="images/hd_dp.jpg" alt="" />
+
+        
+            </ul>
+          </div>
+
+          <div className="top-category">
+            <div className="ui compact menu cate-dpdwn">
+              <div className="ui simple dropdown item mr-5">
+                <a href="#" className="option_links p-0" title="categories">
+                 <img src="images/hd_dp.jpg" alt="" width='30px'/>
                 </a>
-                <div className="menu dropdown_account">
-                  <div className="channel_my">
-                    <div className="profile_link">
-                      <img src="images/hd_dp.jpg" alt="" />
-                      <div className="pd_content">
-                        <div className="rhte85">
-                          <h6>Joginder Singh</h6>
-                          <div className="mef78" title="Verify">
-                            <i className="uil uil-check-circle"></i>
-                          </div>
-                        </div>
-                        <span>
-                          <a
-                            href="https://gambolthemes.net/cdn-cgi/l/email-protection"
-                            className="__cf_email__"
-                            data-cfemail="781f19151a1714414c4b381f15191114561b1715"
-                          >
-                            [email&#160;protected]
-                          </a>
-                        </span>
-                      </div>
-                    </div>
-                    <a
-                      href="my_instructor_profile_view.html"
-                      className="dp_link_12"
-                    >
-                      View Instructor Profile
-                    </a>
-                  </div>
-                  <div className="night_mode_switch__btn">
-                    <a href="#" id="night-mode" className="btn-night-mode">
-                      <i className="uil uil-moon"></i> Night mode
-                      <span className="btn-night-mode-switch">
-                        <span className="uk-switch-button"></span>
-                      </span>
-                    </a>
-                  </div>
-                  <a href="instructor_dashboard.html" className="item channel_item">
-                    Cursus dashboard
+                <div className="menu dropdown_category5">
+                  <a href="#" className="item channel_item">
+                    Register
                   </a>
-                  <a href="membership.html" className="item channel_item">
-                    Paid Memberships
+                  <a href="#" className="item channel_item">
+                    Login
                   </a>
-                  <a href="setting.html" className="item channel_item">
-                    Setting
-                  </a>
-                  <a href="help.html" className="item channel_item">
-                    Help
-                  </a>
-                  <a href="feedback.html" className="item channel_item">
-                    Send Feedback
-                  </a>
-                  <a href="sign_in.html" className="item channel_item">
-                    Sign Out
+                  <a href="#" className="item channel_item">
+                   logout
                   </a>
                 </div>
-              </li>
-              { InstructorLoginStatus!='true' &&
-                <>
-                <li>
-                  <Link  to="instructor-login" className="option_links" title="cart">
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link  to="instructor-register" className="option_links" title="cart">
-                    Register
-                  </Link>
-                </li>
-              </>}
-             
-              <li>
-                  <Link  to="instructor-logout" className="option_links" title="cart">
-                    Logout
-                  </Link>
-                </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </header>
 </>

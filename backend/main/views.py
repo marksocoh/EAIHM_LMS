@@ -26,7 +26,7 @@ def teacher_login(request):
         teacherData = models.Teacher.objects.get(email=email,password=password)
 
         if teacherData:
-                return JsonResponse({'bool':True})
+                return JsonResponse({'bool':True, 'teacher_id':teacherData.id})
         else:
                 return JsonResponse({'bool':False})
 

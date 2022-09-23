@@ -15,6 +15,7 @@ function CreateCourse() {
     'outcomes':'',
     'requirements':''
   })
+  const InstructorID = localStorage.getItem('InstructorID');
     useEffect(()=>{
         document.title="Add course";
         //Fetch category from the database
@@ -42,7 +43,7 @@ function CreateCourse() {
         event.preventDefault();
         const formData = new FormData();
         formData.append('category',course.category);
-        formData.append('teacher',1);
+        formData.append('teacher', InstructorID);
         formData.append('title',course.title);
         formData.append('description',course.description);
         formData.append('thumbnail',course.thumbnail,course.thumbnail.name);
